@@ -1,0 +1,557 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+header{
+    background-color: white;
+    border-bottom: 1px solid rgb(3, 3, 163);
+}
+
+main{
+    margin-left: 1vh;
+    margin-right: 1vh;
+    margin-top: 1vh;
+}
+
+#upbar{
+    background-color: rgb(3, 3, 163);
+    padding: 8px;
+    color: rgb(3, 3, 163);
+}
+
+#imagem-logo{
+    width: 26vw;    
+    height: 13vh;
+
+}
+
+.lista{
+    background: white;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(50,50,90,.1);
+}
+
+.titulo{
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.4em;
+    font-family: monospace;
+    color: rgb(3, 3, 163);
+}
+
+.titulo::after{
+    margin-top: -3px;
+    content: "III";
+    transform: rotate(90deg);
+    float: right;
+    transition: transform .3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteudo{
+    padding: 6px;
+    color: white;
+    font-family: helvetica;
+    font-size: .875em;
+    line-height: 1.4em;
+    display: none;
+    background-color: rgb(3, 3, 163);
+    margin: 5px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.a3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.input-menu {
+    display: none;
+}
+
+.input-menu:checked + .div-menu .conteudo{
+    display: inline-block;
+}
+
+.input-menu:checked + .div-menu .titulo::after{
+    transform: rotate(360deg) scale(1.08);
+    content: "X";
+}
+
+#secd{
+    display: none;
+}
+
+#secp{
+    background-image: url(imagens/segurança-escolas.jpg);
+    box-shadow: inset 0px -20px 20px 3px #222222;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    width: 99%;
+    height: 40vh;
+    text-align:justify;
+    margin-bottom: 1vh; 
+}
+
+#secp>a{
+    position: relative;
+    top: 22vh;
+}
+
+#section-wrap{
+    display: flex;
+    flex-direction: row;  
+    margin-bottom: 1vh;
+}
+
+#secbe{
+    background-image: url(Imagem-das-paginas/saude.JPG);  
+    box-shadow: inset 0px -20px 20px 3px #222222;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    width: 48vw;
+    height: 20vh;
+    margin-right: 1.1vh;
+}
+
+#secbe>a{
+    position: relative;
+    top: 9vh;
+}
+#secbd{
+    background-image: url(imagens/hemominas.jpg);
+    box-shadow: inset 0px -20px 20px 3px #222222;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    width: 48vw;
+    height: 20vh;
+}
+
+#secbd>a{
+    position: relative;
+    top: 9vh;
+}
+
+#secb{
+    background-image: url(Imagem-das-paginas/economia.JPG);
+    box-shadow: inset 0px -20px 20px 3px #222222;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    width: 99%;
+    height: 20vh;
+}
+
+#secb>a{
+    position: relative;
+    top: 6vh;
+}
+
+#line{
+    border-bottom: 1px solid #b4b2b2;
+    margin-left: 2vw;
+    margin-right: 6vw;
+    margin-top: 2vh;
+    width: 91vw;
+    color: black;
+}
+
+#img-betim{
+    background-image: url(imagens/img-betim.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    width: 99%;
+    height: 30vh;
+    margin-bottom: 1vh;
+    margin-top: 2vh;
+}
+
+
+a{
+    margin: 5vh; 
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+a .text-noticia{
+    background-color: #33333327;
+    background-size: 100% 100%;
+    border-radius: 6px;
+    padding: 1px;
+    font-size: 1.5em;
+}
+  
+.text-noticia:hover{
+    background-color: #272727b4;
+}
+
+.texto-index{
+    margin: 1vh;
+    font-size: 0.95em;
+    
+}
+
+footer{
+    margin-top: 2vh ;
+    background-color: rgb(3, 3, 163);
+    padding: 2vh;
+}
+
+
+/*Páginas Internas*/
+
+.texto{
+    margin-top: 26px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    text-align: justify;
+    font-size: 2.15ch;
+    color: #242424ef;
+}
+
+.h3-tema{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: rgb(3, 3, 163);
+}
+
+.subtitulo{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: black;
+    font-size: 1.8em;
+}
+    /*Style da página Economia*/
+
+#sec-usina{
+    background-image: url(Imagem-das-paginas/economia.JPG);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 65vw;
+    height: 28vh;
+    margin-bottom: 0;
+    margin-left: 15vw;
+}
+
+    /*Fim Style da página Economia*/
+.link-img{
+    margin:0;
+    font-size: xx-small;
+    color: #333;
+    margin-left: 18vw;
+}
+
+    /*Style da página Transporte*/
+
+#sec-transporte{
+    background-image: url(Imagem-das-paginas/transporte.JPG);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 65vw;
+    height: 28vh;
+    margin-bottom: 0;
+    margin-left: 15vw;
+}
+
+    /*Fim Style da página Transporte*/
+
+    /*Style da página Política*/
+
+#sec-politica{
+    background-image: url(Imagem-das-paginas/imagemzema.JPG);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 65vw;
+    height: 28vh;
+    margin-bottom: 0;
+    margin-left: 15vw;
+}
+
+    /*Fim Style da página Política*/
+
+    /*Style da página Comidas*/
+
+#sec-queijo{
+    background-image: url(Comidas/paoDeQueijo.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 65vw;
+    height: 28vh;
+    margin-bottom: 0;
+    margin-left: 15vw;
+}
+
+#sec-tropeiro{
+    background-image: url(Comidas/feijaoTropeiro.jfif);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 65vw;
+    height: 28vh;
+    margin-bottom: 0;
+    margin-left: 15vw;
+}
+
+#sec-quiabo{
+    background-image: url(Comidas/Frango-com-quiabo-procurarId.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 65vw;
+    height: 28vh;
+    margin-bottom: 0;
+    margin-left: 15vw;
+}
+
+#sec-doce{
+    background-image: url(Comidas/receita-doce-de-leite-mineiro-procurarId.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 65vw;
+    height: 28vh;
+    margin-bottom: 0;
+    margin-left: 15vw;
+}
+
+#sec-vaca{
+    background-image: url(Comidas/receita-de-vaca-atolada.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 65vw;
+    height: 28vh;
+    margin-bottom: 0;
+    margin-left: 15vw;
+}
+
+#sec-goiabada{
+    background-image: url(Comidas/receitas-de-goiabada-cascao.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 65vw;
+    height: 28vh;
+    margin-bottom: 0;
+    margin-left: 15vw;
+}
+
+#sec-canjiquinha{
+    background-image: url(Comidas/Canjiquinha-com-Linguica.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 65vw;
+    height: 28vh;
+    margin-bottom: 0;
+    margin-left: 15vw;
+}
+
+#sec-tutu{
+    background-image: url(Comidas/receita-de-tutu-de-feijao-2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 65vw;
+    height: 28vh;
+    margin-bottom: 0;
+    margin-left: 15vw;
+}
+
+.topico-comida{
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    color: #E51A00;
+    font-size: 1.4em;
+}
+
+.link-receita{
+    color: black;
+    font-weight: bolder;
+    margin-left: 0px;
+}
+
+    /*Fim Style da página Comidas*/
+
+    /*Style da página Saúde*/
+
+#sec-saude{
+    background-image: url(Imagem-das-paginas/saude.JPG);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 65vw;
+    height: 28vh;
+    margin-bottom: 0;
+    margin-left: 15vw;
+}
+
+    /*Style da página Saúde*/
+
+    /*Style da página Pausa Novo Ensino Médio*/
+
+#sec-educação{
+    background-image: url(imagens/ministro.webp);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 65vw;
+    height: 28vh;
+    margin-bottom: 0;
+    margin-left: 15vw;
+}
+
+    /*Fim Style da página Pausa Novo Ensino Médio*/
+
+    /*Style da página Protesto Ensino Médio*/
+
+#sec-educação2{
+    background-image: url(imagens/protesto-estudantes.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 65vw;
+    height: 28vh;
+    margin-bottom: 0;
+    margin-left: 15vw;
+}
+
+    /*Fim Style da página Protesto Ensino Médio*/
+
+    /*Style da página Doação de Sangue*/
+
+#sec-sangue{
+        background-image: url(imagens/hemominas.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 65vw;
+        height: 28vh;
+        margin-bottom: 0;
+        margin-left: 15vw;
+}
+
+main li{ 
+    text-align: justify;
+    font-size: 2.15ch;
+    color: #242424ef;
+}
+
+#hemominas{
+    color: #E51A00  ;
+    font-size: large;
+    margin-left: 0px;
+    margin-right: 0;
+}
+
+#endereço{
+    font-size: 1.3em;
+    margin-top: 5vh;
+    color: black;
+}
+    /*Fim Style da página Doação de Sangue*/
+
+    /*Style da página Vacinaçaõ*/
+
+#sec-vacinação{
+    background-image: url(imagens/vacinometro.JPG);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 65vw;
+    height: 28vh;
+    margin-bottom: 0;
+    margin-left: 15vw;
+}
+
+.semana{
+    margin-top: 32px;
+    text-align: justify;
+    font-size: 2.15ch;
+    color: #242424ef;
+    font-weight: 500;
+    text-decoration: underline;
+    
+}
+
+#h2{
+    color: #E51A00;;
+    margin-top: 5vh;
+}
+
+    /*Fim Style da página Vacinaçaõ*/
+
+    /*Style da página Ameaças nas escolas*/
+
+#sec-segurança{
+    background-image: url(imagens/segurança-escolas.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 65vw;
+    height: 28vh;
+    margin-bottom: 0;
+    margin-left: 15vw;
+}
+
+    /*Fim Style da página Ameaças nas escolas*/
+
+    /*Style da página Seter*/
+
+#sec-seter{
+    background-image: url(imagens/Seter.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 65vw;
+    height: 28vh;
+    margin-bottom: 0;
+    margin-left: 15vw;
+}
+
+.topico{
+    color: #E51A00;;
+    margin-top: 5vh;
+    margin-bottom: -1vh;
+}
+
+    /*Fim Style da página Seter*/
+
+    /*Style da página Castração*/
+
+#sec-animais{
+    background-image: url(imagens/castracao.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 65vw;
+    height: 28vh;
+    margin-bottom: 0;
+    margin-left: 15vw;
+}
+
+    /*Fim Style da página Castração*/
+
+        /*Style da página Música*/
+
+#sec-musica1{
+    background-image: url(imagens/violao.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 65vw;
+    height: 28vh;
+    margin-bottom: 0;
+    margin-left: 15vw;
+}
+
+#radio{
+    color: rgb(3, 3, 163);
+    text-align: left;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+    /*Style da página Música*/
+
+
+/*Fim das Páginas Internas*/
